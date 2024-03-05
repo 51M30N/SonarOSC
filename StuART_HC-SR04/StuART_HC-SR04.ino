@@ -16,12 +16,6 @@ String completeAddress = String("/HCSR04/") + DEVICE_NAME;
 // INTEGRATION DES HC-SR04
 #define TRIG_PIN_1 D2       // Pin pour le trigger du HC-SR04 (DIGITAL OUT)
 #define ECHO_PIN_1 D1       // Pin pour l'echo du HC-SR04 (digital IN)
-/* #define TRIG_PIN_2 D3       // Pin pour le trigger du HC-SR04 (DIGITAL OUT)
-#define ECHO_PIN_2 D0       // Pin pour l'echo du HC-SR04 (digital IN)
-#define TRIG_PIN_3 D4       // Pin pour le trigger du HC-SR04 (DIGITAL OUT)
-#define ECHO_PIN_3 D5       // Pin pour l'echo du HC-SR04 (digital IN)
-#define TRIG_PIN_4 D7       // Pin pour le trigger du HC-SR04 (DIGITAL OUT)
-#define ECHO_PIN_4 D6       // Pin pour l'echo du HC-SR04 (digital IN) */
 const int NUMBER_OF_SONARS_HCSR04 = 1;                              // NOMBRE DE CAPTEURS
 int TRIG_PINS[NUMBER_OF_SONARS_HCSR04] = {TRIG_PIN_1};//, TRIG_PIN_2, TRIG_PIN_3, TRIG_PIN_4};//
 int ECHO_PINS[NUMBER_OF_SONARS_HCSR04] = {ECHO_PIN_1};//, ECHO_PIN_2, ECHO_PIN_3, ECHO_PIN_4};//
@@ -40,13 +34,7 @@ void setup() { ///////////////////////////////SETUP///////////////////////
  
 // INTEGRATION D'UN HC-SR04
   pinMode(TRIG_PIN_1, OUTPUT);  // Le pin TRIG est en sortie
-  /* pinMode(TRIG_PIN_2, OUTPUT);  // Le pin TRIG est en sortie
-  pinMode(TRIG_PIN_3, OUTPUT);  // Le pin TRIG est en sortie
-  pinMode(TRIG_PIN_4, OUTPUT);  // Le pin TRIG est en sortie */
   pinMode(ECHO_PIN_1, INPUT);   // Le pin ECHO est en entrée
-  /* pinMode(ECHO_PIN_2, INPUT);   // Le pin ECHO est en entrée
-  pinMode(ECHO_PIN_3, INPUT);   // Le pin ECHO est en entrée
-  pinMode(ECHO_PIN_4, INPUT);   // Le pin ECHO est en entrée */
 }
 ///////////////////////////////END SETUP///////////////////////
 
